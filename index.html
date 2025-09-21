@@ -1673,20 +1673,21 @@
                             <button id="export-trades-csv" class="text-sm underline">Export CSV</button>
                         </div>
                         <div class="rounded-lg shadow-sm overflow-x-auto" style="background-color: var(--bg-primary); border: 1px solid var(--border-color);">
-                            <table class="w-full min-w-[1200px] text-sm text-left">
+                            <table class="w-full min-w-[1200px] text-xs text-left border-collapse" style="border: 1px solid var(--border-color);">
                                 <thead class="text-xs uppercase" style="background-color: var(--bg-secondary); color: var(--text-secondary);">
-                                    <tr>
-                                        <th scope="col" class="px-6 py-3">Symbol</th>
-                                        <th scope="col" class="px-6 py-3">Net P&L</th>
-                                        <th scope="col" class="px-6 py-3">Status</th>
-                                        <th scope="col" class="px-6 py-3">Entry Price</th>
-                                        <th scope="col" class="px-6 py-3">Type</th>
-                                        <th scope="col" class="px-6 py-3">Entry Date</th>
-                                        <th scope="col" class="px-6 py-3">Stop Loss</th>
-                                        <th scope="col" class="px-6 py-3">Quantity</th>
-                                        <th scope="col" class="px-6 py-3">Exit Price</th>
-                                        <th scope="col" class="px-6 py-3">Exit Date</th>
-                                        <th scope="col" class="px-6 py-3">Actions</th>
+                                    <tr class="border-b" style="border-color: var(--border-color);">
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Symbol</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Net P&L</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Net P/L %</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Status</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Entry Price</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Type</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Entry Date</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Stop Loss</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Quantity</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Exit Price</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Exit Date</th>
+                                        <th scope="col" class="px-3 py-2" style="border-color: var(--border-color);">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody id="trade-history-tbody">
@@ -2088,18 +2089,22 @@
                         </div>
 
                         <div class="rounded-lg shadow-sm overflow-x-auto" style="background-color: var(--bg-primary); border: 1px solid var(--border-color);">
-                            <table class="w-full min-w-[1200px] text-sm text-left">
+                            <table class="w-full min-w-[1600px] text-xs text-left border-collapse" style="border: 1px solid var(--border-color);">
                                 <thead class="text-xs uppercase" style="background-color: var(--bg-secondary); color: var(--text-secondary);">
-                                    <tr>
-                                        <th scope="col" class="px-6 py-3">Date</th>
-                                        <th scope="col" class="px-6 py-3">Type</th>
-                                        <th scope="col" class="px-6 py-3">Symbol/Desc</th>
-                                        <th scope="col" class="px-6 py-3">Strategy</th>
-                                        <th scope="col" class="px-6 py-3">Gross P/L</th>
-                                        <th scope="col" class="px-6 py-3">Charges</th>
-                                        <th scope="col" class="px-6 py-3">Net P/L</th>
-                                        <th scope="col" class="px-6 py-3">Amount (₹)</th>
-                                        <th scope="col" class="px-6 py-3">Notes</th>
+                                    <tr class="border-b" style="border-color: var(--border-color);">
+                                        <th scope="col" class="px-2 py-2 border-r text-center" style="border-color: var(--border-color); width: 100px; min-width: 100px;">Date</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Type</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Symbol/Desc</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Strategy</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Direction</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Gross P/L</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Charges</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Net P/L</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Net P/L %</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Amount (₹)</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Outcome Summary</th>
+                                        <th scope="col" class="px-3 py-2 border-r" style="border-color: var(--border-color);">Emotional State</th>
+                                        <th scope="col" class="px-3 py-2" style="border-color: var(--border-color);">Notes</th>
                                     </tr>
                                 </thead>
                                 <tbody id="statement-tbody">
@@ -3137,6 +3142,31 @@
             const [year, month, day] = datePart.split('-');
             return `${day}-${month}-${year}`;
         };
+
+        // Helper function to format date in compact format for trade statement (DD/MM/YY)
+        const formatDateCompact = (dateString) => {
+            if (!dateString) return '';
+            
+            // Handle both date-only and datetime formats
+            let datePart;
+            if (dateString.includes('T')) {
+                // ISO datetime format: 2024-01-15T10:30:00
+                datePart = dateString.split('T')[0];
+            } else {
+                // Date-only format: 2024-01-15
+                datePart = dateString;
+            }
+            
+            // Validate the date format
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(datePart)) {
+                return dateString; // Return original if invalid format
+            }
+            
+            // Convert YYYY-MM-DD to DD/MM/YY (compact format)
+            const [year, month, day] = datePart.split('-');
+            const shortYear = year.slice(-2); // Get last 2 digits of year
+            return `${day}/${month}/${shortYear}`;
+        };
         
         const countTradingDays = (startDate, endDate) => {
             let count = 0;
@@ -3984,10 +4014,11 @@
                     const gross = (t.exit_price && t.exit_date) ? ((t.exit_price - t.entry_price) * (t.quantity||0)) : 0;
                     const charges = (t.brokerage||0)+(t.other_fees||0);
                     const net = gross - charges;
-                    return [formatDateForDisplay(t.exit_date||t.entry_date)||'', 'Trade', t.asset||'', t.strategy||'', gross, charges, net, '', t.outcomeSummary||''];
+                    const netProfitPercentage = (t.exit_price && t.exit_date && t.entry_price) ? ((net / (t.entry_price * (t.quantity||0))) * 100) : 0;
+                    return [formatDateForDisplay(t.exit_date||t.entry_date)||'', 'Trade', t.asset||'', t.strategy||'', t.direction||'', gross, charges, net, netProfitPercentage, '', t.outcomeSummary||'', t.emotionalState||'', t.reasons||''];
                 });
-                const ledgerRows = ledger.map(l => [formatDateForDisplay(l.date)||'', l.type, l.type, '—', '', '', '', l.amount||0, l.notes||'']);
-                const header = ['Date','Type','Symbol/Desc','Strategy','Gross P/L','Charges','Net P/L','Amount (₹)','Notes'];
+                const ledgerRows = ledger.map(l => [formatDateForDisplay(l.date)||'', l.type, l.type, '—', '—', '', '', '', '', l.amount||0, '—', '—', l.notes||'']);
+                const header = ['Date','Type','Symbol/Desc','Strategy','Direction','Gross P/L','Charges','Net P/L','Net P/L %','Amount (₹)','Outcome Summary','Emotional State','Notes'];
                 downloadCsv('statement.csv', [header, ...tradeRows, ...ledgerRows]);
             });
         };
@@ -4002,28 +4033,30 @@
                     const isClosed = t.exit_date && t.exit_price && (!t.exit_quantity || t.exit_quantity >= t.quantity);
                     const isPartialExit = t.exit_date && t.exit_price && t.exit_quantity && t.exit_quantity < t.quantity;
                     const pnl = (isClosed || isPartialExit) ? calculateNetPnl(t) : 0;
+                    const netProfitPercentage = (isClosed || isPartialExit) && t.entry_price ? ((pnl / (t.entry_price * (t.quantity || 0))) * 100) : 0;
                     let status = 'Open';
                     if (isClosed) status = 'Closed';
                     else if (isPartialExit) status = 'Partial Exit';
                     const type = t.direction || '—';
                     return `
-                        <tr>
-                            <td class="px-6 py-3">${t.asset || '—'}</td>
-                            <td class="px-6 py-3 ${pnl >= 0 ? 'text-green-500' : 'text-red-500'}">${formatCurrency(pnl)}</td>
-                            <td class="px-6 py-3">
+                        <tr class="border-b" style="border-color: var(--border-color);">
+                            <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${t.asset || '—'}</td>
+                            <td class="px-3 py-2 border-r ${pnl >= 0 ? 'text-green-500' : 'text-red-500'}" style="border-color: var(--border-color);">${formatCurrency(pnl)}</td>
+                            <td class="px-3 py-2 border-r ${netProfitPercentage >= 0 ? 'text-green-500' : 'text-red-500'}" style="border-color: var(--border-color);">${(isClosed || isPartialExit) ? (netProfitPercentage ? netProfitPercentage.toFixed(2) + '%' : '—') : '—'}</td>
+                            <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">
                                 ${isPartialExit ? 
                                     `<span class="text-blue-600 underline cursor-pointer" data-action="view-partial" data-id="${t.id}">${status}</span>` : 
                                     status
                                 }
                             </td>
-                            <td class="px-6 py-3">${t.entry_price ?? '—'}</td>
-                            <td class="px-6 py-3">${type}</td>
-                            <td class="px-6 py-3">${formatDateForDisplay(t.entry_date) || '—'}</td>
-                            <td class="px-6 py-3">${t.stop_loss ?? '—'}</td>
-                            <td class="px-6 py-3">${t.quantity ?? '—'}</td>
-                            <td class="px-6 py-3">${t.exit_price ?? '—'}</td>
-                            <td class="px-6 py-3">${formatDateForDisplay(t.exit_date) || '—'}</td>
-                            <td class="px-6 py-3 actions-cell">
+                            <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${t.entry_price ?? '—'}</td>
+                            <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${type}</td>
+                            <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${formatDateForDisplay(t.entry_date) || '—'}</td>
+                            <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${t.stop_loss ?? '—'}</td>
+                            <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${t.quantity ?? '—'}</td>
+                            <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${t.exit_price ?? '—'}</td>
+                            <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${formatDateForDisplay(t.exit_date) || '—'}</td>
+                            <td class="px-3 py-2 actions-cell" style="border-color: var(--border-color);">
                                 ${isClosed ? 
                                     // Closed trades: Show Edit and Delete icons only
                                     `<button class="action-icon" data-action="edit" data-id="${t.id}" title="Edit Trade">
@@ -5445,16 +5478,23 @@
                     const gross = closed ? ((t.exit_price - t.entry_price) * (t.quantity || 0)) : 0;
                     const net = gross - charges;
                     
+                    // Calculate net profit/loss percentage
+                    const netProfitPercentage = closed && t.entry_price ? ((net / (t.entry_price * (t.quantity || 0))) * 100) : 0;
+                    
                     return {
                         date: formatDateForDisplay(t.exit_date || t.entry_date) || '—',
                         type: 'Trade',
                         symbol: t.asset || '—',
                         strategy: t.strategy || '—',
+                        direction: t.direction || '—',
                         gross,
                         charges,
                         net,
+                        netProfitPercentage,
                         amount: '',
-                        notes: (t.outcomeSummary || '')
+                        outcomeSummary: t.outcomeSummary || '',
+                        emotionalState: t.emotionalState || '',
+                        notes: t.reasons || ''
                     };
                 });
                 const ledgerRows = ledger.map(l => ({
@@ -5462,10 +5502,14 @@
                     type: l.type,
                     symbol: l.type,
                     strategy: '—',
+                    direction: '—',
                     gross: 0,
                     charges: 0,
                     net: 0,
+                    netProfitPercentage: 0,
                     amount: l.amount || 0,
+                    outcomeSummary: '—',
+                    emotionalState: '—',
                     notes: l.notes || '—'
                 }));
 
@@ -5518,7 +5562,7 @@
                 if (allRows.length === 0) {
                     statementBody.innerHTML = `
                         <tr>
-                            <td colspan="9" class="px-6 py-8 text-center" style="color: var(--text-muted);">
+                            <td colspan="13" class="px-6 py-8 text-center" style="color: var(--text-muted);">
                                 <div class="flex flex-col items-center">
                                     <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29-1.009-5.824-2.709M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -5533,16 +5577,20 @@
                 }
                 
                 statementBody.innerHTML = allRows.map(r => `
-                    <tr>
-                        <td class="px-6 py-3">${r.date}</td>
-                        <td class="px-6 py-3">${r.type}</td>
-                        <td class="px-6 py-3">${r.symbol}</td>
-                        <td class="px-6 py-3">${r.strategy}</td>
-                        <td class="px-6 py-3 ${r.gross >= 0 ? 'text-green-500' : 'text-red-500'}">${r.type==='Trade' ? formatCurrency(r.gross) : '—'}</td>
-                        <td class="px-6 py-3">${r.type==='Trade' ? formatCurrency(r.charges) : '—'}</td>
-                        <td class="px-6 py-3 ${r.net >= 0 ? 'text-green-500' : 'text-red-500'}">${r.type==='Trade' ? formatCurrency(r.net) : '—'}</td>
-                        <td class="px-6 py-3">${r.type!=='Trade' ? formatCurrency(r.amount) : '—'}</td>
-                        <td class="px-6 py-3">${r.notes}</td>
+                    <tr class="border-b" style="border-color: var(--border-color);">
+                        <td class="px-2 py-2 border-r text-center" style="border-color: var(--border-color); width: 100px; min-width: 100px;">${r.date}</td>
+                        <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${r.type}</td>
+                        <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${r.symbol}</td>
+                        <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${r.strategy}</td>
+                        <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${r.direction}</td>
+                        <td class="px-3 py-2 border-r ${r.gross >= 0 ? 'text-green-500' : 'text-red-500'}" style="border-color: var(--border-color);">${r.type==='Trade' ? formatCurrency(r.gross) : '—'}</td>
+                        <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${r.type==='Trade' ? formatCurrency(r.charges) : '—'}</td>
+                        <td class="px-3 py-2 border-r ${r.net >= 0 ? 'text-green-500' : 'text-red-500'}" style="border-color: var(--border-color);">${r.type==='Trade' ? formatCurrency(r.net) : '—'}</td>
+                        <td class="px-3 py-2 border-r ${r.netProfitPercentage >= 0 ? 'text-green-500' : 'text-red-500'}" style="border-color: var(--border-color);">${r.type==='Trade' ? (r.netProfitPercentage ? r.netProfitPercentage.toFixed(2) + '%' : '—') : '—'}</td>
+                        <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${r.type!=='Trade' ? formatCurrency(r.amount) : '—'}</td>
+                        <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${r.outcomeSummary}</td>
+                        <td class="px-3 py-2 border-r" style="border-color: var(--border-color);">${r.emotionalState}</td>
+                        <td class="px-3 py-2" style="border-color: var(--border-color);">${r.notes}</td>
                     </tr>
                 `).join('');
             } catch (e) {
